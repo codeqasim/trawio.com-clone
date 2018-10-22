@@ -1,0 +1,77 @@
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace .pace-activity {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: #31353e;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: translateX(100%) translateY(-100%) rotate(45deg);
+  transform: translateX(100%) translateY(-100%) rotate(45deg);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.pace.pace-active .pace-activity {
+  -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
+  transform: translateX(50%) translateY(-50%) rotate(45deg);
+}
+
+.pace .pace-activity::before,
+.pace .pace-activity::after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: block;
+    border: 10px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    content: '';
+}
+
+.pace .pace-activity::before {
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    border-left-color: rgba(71, 117, 255, 1);
+    -webkit-animation: pace-theme-corner-indicator-spin 1s linear infinite;
+    animation: pace-theme-corner-indicator-spin 1s linear infinite;
+}
+
+.pace .pace-activity::after {
+ display: block;
+  margin: 250px auto;
+  height: 80px;
+  width: 80px;
+  -webkit-animation: rotation .9s infinite linear;
+  -moz-animation: rotation .9s infinite linear;
+  -o-animation: rotation .9s infinite linear;
+  animation: rotation .9s infinite linear;
+  border-left: 8px solid rgba(189, 189, 189, 0.3);
+  border-right: 8px solid rgba(189, 189, 189, 0.3);
+  border-bottom: 8px solid rgba(189, 189, 189, 0.3);
+  border-top: 8px solid rgba(71, 117, 255, 1);
+  border-radius: 100%;
+}
+
+@-webkit-keyframes pace-theme-corner-indicator-spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+@keyframes pace-theme-corner-indicator-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}

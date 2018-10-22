@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|public|assets|uploads|themes|install|updates|asset|mob|robots\.txt)
+RewriteRule ^(.*)$ index.php?/$1 [QSA,L]
+
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|css)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+

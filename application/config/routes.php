@@ -1,0 +1,21 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+$route['default_controller'] = "Home";
+$route['404_override'] = 'Home';
+$route['translate_uri_dashes'] = FALSE;
+$route['supplier-register'] = 'Home/supplier_register';
+$route[str_replace("/", "",EANSLUG)] = 'Ean';
+$route[EANSLUG.'loadMore'] = 'Ean/loadMore';
+$route[EANSLUG.'listings/(:any)'] = 'Ean/listings/$1';
+$route[EANSLUG.'search'] = 'Ean/search';
+$route[EANSLUG.'reservation'] = 'Ean/reservation';
+$route[str_replace("/", "",EANSLUG)."/?(:any)?"] = 'Ean/index/$1';
+$route[EANSLUG.'itin'] = 'Ean/itin';
+$route[EANSLUG.'hotel/(:any)/(:any)/(:any)/(:any)'] = 'Ean/hotel/$1/$2/$3/$4';
+$route['car'] = 'Cartrawler';
+$route['flightsd'] = 'Flightsdohop';
+$route['flightst'] = 'Travelstart';
+$route['flightsw'] = 'Wegoflights';
+$route['hotelsc'] = 'Hotelscombined';
+$route['sitemap\.xml'] = "Sitemap";
+$route['getCities'] = "Home/getCities";

@@ -1,0 +1,12 @@
+/*
+Theme Name: Travelhope
+Theme URI: https://www.travelhope.com/
+Description: Travelhope Theme.
+Version: v6x
+Author: Travelhope
+Author URI: https://www.travelhope.com/
+*/
+
+/* Loading Spiner */
+#rotatingDiv { display: block; margin: 16px auto; height: 50px; width: 50px; -webkit-animation: rotation .9s infinite linear; -moz-animation: rotation .9s infinite linear; -o-animation: rotation .9s infinite linear; animation: rotation .9s infinite linear; border-left: 8px solid rgba(0,0,0,.20); border-right: 8px solid rgba(0,0,0,.20); border-bottom: 8px solid rgba(0,0,0,.20); border-top: 8px solid rgba(33,128,192,1); border-radius: 100%; } @keyframes rotation { from { transform: rotate(0deg); } to { transform: rotate(359deg); } } @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(359deg); } } @-moz-keyframes rotation { from { -moz-transform: rotate(0deg); } to { -moz-transform: rotate(359deg); } } @-o-keyframes rotation { from { -o-transform: rotate(0deg); } to { -o-transform: rotate(359deg); } }
+.rotatingDiv { display: block; margin: 16px auto; height: 50px; width: 50px; -webkit-animation: rotation .9s infinite linear; -moz-animation: rotation .9s infinite linear; -o-animation: rotation .9s infinite linear; animation: rotation .9s infinite linear; border-left: 8px solid rgba(0,0,0,.20); border-right: 8px solid rgba(0,0,0,.20); border-bottom: 8px solid rgba(0,0,0,.20); border-top: 8px solid rgba(33,128,192,1); border-radius: 100%; } @keyframes rotation { from { transform: rotate(0deg); } to { transform: rotate(359deg); } } @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(359deg); } } @-moz-keyframes rotation { from { -moz-transform: rotate(0deg); } to { -moz-transform: rotate(359deg); } } @-o-keyframes rotation { from { -o-transform: rotate(0deg); } to { -o-transform: rotate(359deg); } }
